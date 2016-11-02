@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+	<title>Ifs Encadeados</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+	//se o salario mensal >0 e < 100 ->5%
+	//salario<200 - >10%
+var ehEstagiario = false;
+var ehCLT = true;
+if(ehEstagiario || ehCLT){
+	var salarioMensal = 2500;
+	
+	if(salarioMensal>0 && salarioMensal<1000){
+		salarioMensal += salarioMensal*0.05;
+		console.log("salario>0 e menor1000");
+		console.log(salarioMensal);
+	}else if(salarioMensal<2000){
+		salarioMensal+= salarioMensal*0.10;
+		console.log("salario < 2000");
+		console.log(salarioMensal);
+	}else{
+		salarioMensal+=salarioMensal*0.15;
+		console.log("nao caiu nas outras");
+		console.log(salarioMensal);
+		
+	}
+}
+</script>
